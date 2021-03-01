@@ -1,5 +1,5 @@
 # FASTAPI-ORMAR-UTILITIES
-
+![](https://www.code-inspector.com/project/19657/score/svg)
 ## Small package for better interaction with Ormar ORM.
 
 ### This package makes your views cleaner
