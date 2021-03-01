@@ -9,6 +9,10 @@
 * Compatible with FastAPI
 * In my opinion Ormar is the best ORM for FastAPI
 
+### Install with pip
+```
+pip install fastapi-ormar-utilities
+```
 
 ### Example usage:
 ```python
