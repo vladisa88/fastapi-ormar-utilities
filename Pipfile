@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 ormar = "*"
 pydantic = "*"
+fastapi = "*"
 
 [dev-packages]
 
