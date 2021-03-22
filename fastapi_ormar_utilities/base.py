@@ -38,12 +38,18 @@ class Base:
         """
         return await self.model.objects.get(**kwargs)
 
+<<<<<<< Updated upstream
     async def filter(self, **kwargs) -> ormar.Model:
+=======
+    @handle_exception
+    async def filter(self, related_field: str = None, **kwargs) -> ormar.Model:
+>>>>>>> Stashed changes
         """
         Fetch objects using special params
         """
         return await self.model.objects.all(**kwargs)
 
+    @handle_exception
     async def update(self, unique_id: int, schema: BaseModel) -> ormar.Model:
         """
         Update one object in database
@@ -51,6 +57,7 @@ class Base:
         obj = await self.fetch_one(unique_id)
         return await obj.update(schema.dict(exclude_unset=True))
 
+    @handle_exception
     async def delete(self, unique_id: int) -> None:
         """
         Remove object from database
