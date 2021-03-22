@@ -5,7 +5,7 @@ directory = path.abspath(path.dirname(__file__))
 with open(path.join(directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
-VERSION = '0.0.5'
+VERSION = '0.1.0'
 DESCRIPTION = 'Small, but usefull library for interaction with Ormar ORM'
 
 # Setting up
@@ -19,11 +19,10 @@ setup(
         long_description=long_description,
         long_description_content_type='text/markdown',
         packages=find_packages(),
-        install_requires=['pydantic', 'ormar'],
+        install_requires=['pydantic', 'ormar', 'fastapi'],
         keywords=['python', 'ormar', 'async', 'fastapi', 'pydantic'],
         classifiers= [
             "Development Status :: 3 - Alpha",
-            "Intended Audience :: Education",
             "Programming Language :: Python",
             "Programming Language :: Python :: 3",
             "Programming Language :: Python :: 3.8",
