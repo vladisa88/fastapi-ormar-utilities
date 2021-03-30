@@ -5,7 +5,7 @@ directory = path.abspath(path.dirname(__file__))
 with open(path.join(directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 DESCRIPTION = 'Small, but usefull library for interaction with Ormar ORM'
 
 # Setting up

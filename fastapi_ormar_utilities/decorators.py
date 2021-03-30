@@ -11,5 +11,5 @@ def handle_exception(fetch_function):
         try:
             return await fetch_function(*args, **kwargs)
         except NoMatch:
-            return HTTPException(status_code=404, detail="Item not found")
+            raise HTTPException(status_code=404, detail="Item not found")
     return wrapper
